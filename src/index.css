@@ -202,6 +202,15 @@ body {
   color: #6f7a55;
 }
 
+.summary-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.summary-link:hover {
+  text-decoration: underline;
+}
+
 .summary-card h2,
 .highlights-card h2,
 .inventory-heading h2,
@@ -233,8 +242,8 @@ body {
 
 .inventory-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 16px;
+  grid-template-columns: 1fr;
+  gap: 12px;
 }
 
 .category-card {
@@ -249,7 +258,7 @@ body {
   justify-content: space-between;
   align-items: baseline;
   gap: 12px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .category-title-row h3 {
@@ -262,10 +271,80 @@ body {
   color: #6d7b54;
 }
 
-.category-card ul {
+.species-list {
+  display: grid;
+  gap: 10px;
+}
+
+.species-item {
+  border-top: 1px solid rgba(17, 33, 15, 0.08);
+  padding-top: 10px;
+}
+
+.species-main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+}
+
+.species-name-block {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.species-main h4 {
   margin: 0;
-  padding-left: 18px;
-  color: #3c4635;
+  font-size: 0.96rem;
+}
+
+.species-main a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.species-main a:hover {
+  text-decoration: underline;
+}
+
+.latin-name {
+  color: #6d7b54;
+  font-size: 0.84rem;
+  font-style: italic;
+}
+
+.species-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.total-count {
+  font-weight: 700;
+  color: #23451e;
+}
+
+.location-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.location-tags span {
+  background: #eef3e4;
+  color: #40562e;
+  border-radius: 999px;
+  padding: 3px 8px;
+  font-size: 0.78rem;
+}
+
+.category-note {
+  margin: 0;
+  color: #5f684f;
+  font-size: 0.92rem;
 }
 
 .quote-card blockquote {
